@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Cove</title>
+
+	<link rel="stylesheet" hrf="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+
+
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6" style="background-color: yellow;">
+			<h1>Crystal Cove</h1>
+		</div>
+	</div>
+
+	<div class="instructions">
+		<h3>Directions to play the game</h3>
+		<br>
+		<ol>
+			<li>You will be a given a random number to start the game</li>
+			<li>There are four crystals below</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
+			</ul>
+			<li>By clicking on a crstal, you will add a specific amount of points to your total score</li>
+			<li>You win the game by matching your total score to the random number</li>
+			<li>You lose the game if your total score goes above the random number</li>
+			<li>The value of each crystal is hidden from you until you click on it</li>
+			<li>Each time when the game starts, the game will change the values of each crystal</li>
+		</ol>
+	</div>
+	<div class="numberToMatch" style="background-color: lightblue">
+		<h2>Number to Get:
+			<span id="randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses" style="background-color: orange">
+		<h2>Wins:
+			<span id="numberWins"></span>
+			<br>
+		    Losses:
+			<span id="numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="https://vignette3.wikia.nocookie.net/mm54321/images/2/2c/Blue-gem.png/revision/latest?cb=20120719191949" width="100px" height="100px" class=gemImage id="one" alt="Blue Gem">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXAXwlkkVmBMMEo2H34AYWVu_BlzROhjQPHPp7H28sPDPu4CB" width="100px" height="100px" class= gemImage id="two" alt="Green Gem">
+		<img src=https://s-media-cache-ak0.pinimg.com/736x/5e/32/1d/5e321dd750a92ffbf47cb71c333441ae.jpg width="100px" height="100px" class=gemImage id="three" alt="red Gem">
+		<img src="http://gem2000.com/news/wp-content/uploads/2012/10/SapphireYellow1.62ct6.6x6.1mmCushionNSAHE_sm.jpg" width="100px" height="100px" class= gemimage id="four" alt="yellow Gem">
+	</div>
+	<div class="userTotal" style="background-color: pink">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
+
+
+
